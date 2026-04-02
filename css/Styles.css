@@ -9,10 +9,10 @@ p {
 }
 
 h4{
-    color: #255368;
+    color: #2b982b;
     text-align: center;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-color: #48320c;
     font-family: "Londrina Solid";
     font-size: 50px;
     font-style: normal;
@@ -21,23 +21,23 @@ h4{
 }
 
 h1{
-    color:#255368;
+    color:#2b982b;
     text-align: center;
     font-family: "Gothic A1";
     font-size: 75px;
     font-weight: 900;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-color: #48320c;
 }
 
 h3{
-    color:#255368;
+    color:#2b982b;
     text-align: center;
     font-family: "Gothic A1";
     font-size: 75px;
     font-weight: 900;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-color: #48320c;
 }
 
 body {
@@ -47,4 +47,14 @@ body {
 .image_center{
     margin: auto;
     width: 70%;
+}
+
+h5{
+    color:#2b982b;
+    text-align: center;
+    font-family: "Gothic A1";
+    font-size: 35px;
+    font-weight: 900;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #48320c;
 }
