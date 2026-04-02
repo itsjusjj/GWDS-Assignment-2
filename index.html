@@ -24,40 +24,25 @@
 
 <body>
     <!-- this begins the header code -->
-    <header>
-        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-            <img src="images/branch_logo.png" alt="Logo" width="70" height="34" class="d-inline-block align-text-top">
-            Branches, a vegan utopia!
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#Menu">Menu</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#Reflection">Reservations</a>
-                </li>
-            </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-            </div>
-        </div>
-        </nav>
+    <header class="container">
+  <!-- Header section of the page. The class "container" controls layout width -->
 
-    </header>
+    <!-- Restaurant Logo -->
+    <img
+      src="images/branch_logo.png"
+      alt="La Bella Cucina Logo"
+      class="logo"
+    />
+    <!-- Displays the restaurant logo image -->
+
+  </header>
 
 
-    <main>
+    <main class="container">
+        <section class="card">
+            <h1 id="headline">
+        Welcome to Branches, your vegan utopia.
+      </h1>
     <div class="image_center">
         <div class="container-fluid py-3">
             <div id="carouselExampleFade" class="carousel slide carousel-fade">
@@ -103,7 +88,7 @@
         </div>
 
 
-    </main>
+    
     <!-- this ends the main code -->
 
     <!--Begining of row col-->
@@ -127,8 +112,15 @@
             </div>
         </div>
     </div>
-
+    </section>
+<section class="card">
      <h3 id="Menu">Menu</h3>
+     <p class="description">
+        Here at Branches we have a wide variet of vegan foods ready for you to choose. Here are some of them.
+      </p>
+
+     </section>
+    </main>
                 <p>
 </p>
 

@@ -1,5 +1,5 @@
 p {
-    color: #FFF;
+    color: #48320c;
     font-family: "EB Garamond";
     font-size: 30px;
     font-style: normal;
@@ -24,7 +24,7 @@ h1{
     color:#2b982b;
     text-align: center;
     font-family: "Gothic A1";
-    font-size: 75px;
+    font-size: 35px;
     font-weight: 900;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #48320c;
@@ -41,7 +41,7 @@ h3{
 }
 
 body {
-    background: #3A3333;
+    background: #ffffff;
 }
 
 .image_center{
@@ -57,4 +57,167 @@ h5{
     font-weight: 900;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #48320c;
+}
+
+
+/* Root variables define reusable colours used across the site */
+:root {
+  --bg: #ffffff;                     /* Page background colour */
+  --card: rgba(0, 0, 0, 0.05);        /* Light background colour used for cards */
+  --text: #222222;                    /* Main text colour */
+  --muted: #222222;                   /* Secondary text colour */
+  --border: rgba(0, 0, 0, 0.12);      /* Light border colour */
+}
+
+/* Apply box-sizing to all elements so padding and borders are included in width calculations */
+* {
+  box-sizing: border-box;
+}
+
+/* Basic page styling */
+body {
+  margin: 0;                         /* Removes default browser margin */
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  /* Defines the font stack used on the site */
+
+  background: var(--bg);             /* Uses the background colour variable */
+  color: var(--text);                /* Uses the main text colour variable */
+}
+
+/* Container used to center page content and limit width */
+.container {
+  width: min(980px, 92vw);           /* Max width 980px or 92% of viewport */
+  margin: 0 auto;                    /* Horizontally centres the container */
+}
+
+/* Branding section (not heavily used in the HTML but included for styling) */
+.brand {
+  margin: 18px 0 4px;
+  text-align: center;
+}
+
+/* Muted text style used for secondary text */
+.muted {
+  margin: 0 0 18px;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* Logo image styling */
+.logo {
+  width: 200px;                      /* Sets fixed logo width */
+  display: block;                    /* Makes image behave like a block element */
+  margin: 10px auto;                 /* Centers the logo horizontally */
+}
+
+/* Card container used for the main content area */
+.card {
+  border: 1px solid var(--border);   /* Light border around the card */
+  background: white;                 /* White background */
+  border-radius: 18px;               /* Rounded corners */
+  padding: 18px;                     /* Inner spacing */
+}
+
+/* Introductory paragraph style */
+.lead {
+  color: var(--muted);
+  line-height: 1.6;                  /* Improves readability */
+  max-width: 65ch;                   /* Limits line length for readability */
+}
+
+/* General description paragraph style */
+.description {
+  line-height: 1.6;                  /* Comfortable line spacing */
+  color: var(--muted);
+}
+
+/* Large featured images used on the page */
+.hero-image {
+  width: 100%;                       /* Image fills container width */
+  height: 320px;                     /* Fixed height */
+  object-fit: cover;                 /* Crops image to maintain proportions */
+  border-radius: 14px;               /* Rounded corners */
+  border: 1px solid var(--border);
+  margin: 16px 0;                    /* Vertical spacing */
+}
+
+/* Dish photo buttons section */
+
+.dish-buttons {
+  margin-top: 20px;
+  display: flex;                     /* Uses Flexbox layout */
+  gap: 40px;                         /* Space between images */
+  justify-content: center;           /* Centres images horizontally */
+}
+
+/* Remove default button styling */
+.dish-buttons button {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;                   /* Cursor remains normal (not clickable) */
+}
+
+/* Styling for the dish images */
+.dish-buttons img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;                 /* Ensures image fills square shape */
+  border-radius: 10px;
+  border: 2px solid #ddd;            /* Light grey border */
+}
+
+/* Icon buttons section */
+
+.icon-buttons {
+  display: flex;                     /* Flexbox layout */
+  justify-content: center;           /* Center icons horizontally */
+  align-items: center;
+  gap: 25px;                         /* Space between icon buttons */
+  margin: 30px 0;
+}
+
+/* Remove default button styling and align icon + text vertically */
+.icon-buttons button {
+  border: none;
+  background: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;            /* Stack icon and label vertically */
+  align-items: center;
+  cursor: default;
+}
+
+/* Icon images */
+.icon-buttons img {
+  width: 150px;
+  height: 150px;
+}
+
+/* Text labels under icons */
+.icon-buttons span {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #444;
+}
+
+/* Footer styling */
+.footer {
+  margin: 28px 0 40px;               /* Space above and below footer */
+  padding-top: 18px;
+  border-top: 1px solid var(--border); /* Separator line */
+  color: var(--muted);
+  text-align: center;
+  font-size: 14px;
+}
+
+.dish.button {
+  transform-origin: center;
+}
+
+
+.icon-button,
+.cocktails-image{
+  will-change: transform, opacity;
+  transform-origin: center;
 }
