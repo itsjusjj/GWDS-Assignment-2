@@ -1,0 +1,50 @@
+p {
+    color: #FFF;
+    font-family: "EB Garamond";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: auto;
+}
+
+h4{
+    color: #255368;
+    text-align: center;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+    font-family: "Londrina Solid";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+h1{
+    color:#255368;
+    text-align: center;
+    font-family: "Gothic A1";
+    font-size: 75px;
+    font-weight: 900;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+}
+
+h3{
+    color:#255368;
+    text-align: center;
+    font-family: "Gothic A1";
+    font-size: 75px;
+    font-weight: 900;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+}
+
+body {
+    background: #3A3333;
+}
+
+.image_center{
+    margin: auto;
+    width: 70%;
+}
