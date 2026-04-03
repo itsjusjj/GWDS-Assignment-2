@@ -60,6 +60,18 @@ h5{
 }
 
 
+h6 {
+    color: #48320c;
+    font-family: "EB Garamond";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: auto;
+}
+
+
+
 /* Root variables define reusable colours used across the site */
 :root {
   --bg: #ffffff;                     /* Page background colour */
